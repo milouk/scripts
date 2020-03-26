@@ -4,6 +4,8 @@ RED="\033[1;31m"
 GREEN="\033[1;32m"
 NOCOLOR="\033[0m"
 
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+
 echo -e "${GREEN}Updating Packages${NOCOLOR}"
 
 sh update-script.sh
@@ -30,7 +32,7 @@ make -j$(nproc --all)
 
 echo -e "${GREEN}Installing${NOCOLOR}"
 
-make install
+sudo make install
 
 echo -e "${GREEN}Creating build${NOCOLOR}"
 
