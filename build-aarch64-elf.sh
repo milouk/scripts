@@ -59,6 +59,8 @@ echo -e "${GREEN}Cleaning Repo${NOCOLOR}"
 
 cd ..
 cd gcc-prebuilt-elf-toolchains/
+git fetch
+git pull -r
 rm -rf aarch64-linux-elf/
 cd ..
 
