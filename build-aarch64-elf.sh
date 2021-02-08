@@ -61,13 +61,13 @@ cd ..
 cd gcc-prebuilt-elf-toolchains/
 git fetch
 git pull -r
-rm -rf aarch64-linux-elf/
+rm -rf aarch64-milouk-elf/
 cd ..
 
 echo -e "${GREEN}Copy toolchain to Repo${NOCOLOR}"
 
 cd x-tools
-cp -r aarch64-linux-elf/ ../gcc-prebuilt-elf-toolchains/
+cp -r aarch64-milouk-elf/ ../gcc-prebuilt-elf-toolchains/
 
 echo -e "${GREEN}Uploading to GitHub${NOCOLOR}"
 
